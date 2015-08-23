@@ -13,5 +13,9 @@ public class AppMain {
     public static void Main(string[] args)
     {
         Console.Writeln("Hello World");
+        var isABoolean = true;
+        isABoolean = false;
+
+        var thisIsNull = null;
     }
 }

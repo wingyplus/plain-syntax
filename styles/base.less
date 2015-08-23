@@ -102,22 +102,15 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .constant {
-  color: @very-light-gray;
+  color: @green;
 
-  &.character.escape {
-    color: @light-gray;
+  &.js {
+    color: @very-light-gray;
   }
 
-  &.numeric {
-    color: @green;
-  }
-
+  &.character.escape,
   &.other.color {
     color: @light-gray;
-  }
-
-  &.other.symbol {
-    color: @green;
   }
 }
 
