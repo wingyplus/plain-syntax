@@ -80,14 +80,6 @@ atom-text-editor .search-results .marker.current-result .region,
 .keyword {
   color: @very-light-gray;
 
-  &.control {
-    color: @very-light-gray;
-  }
-
-  &.operator {
-    color: @syntax-text-color;
-  }
-
   &.other.special-method {
     color: @blue;
   }
@@ -120,10 +112,6 @@ atom-text-editor .search-results .marker.current-result .region,
   &.interpolation {
     color: darken(@red, 10%);
   }
-
-  &.parameter.function {
-    color: @syntax-text-color;
-  }
 }
 
 .invalid.illegal {
@@ -134,13 +122,8 @@ atom-text-editor .search-results .marker.current-result .region,
 .string {
   color: @green;
 
-
   &.regexp {
     color: @light-gray;
-
-    .source.ruby.embedded {
-      color: @light-gray;
-    }
   }
 
   &.other.link {
@@ -169,13 +152,15 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @blue;
     }
 
-    &.bold {
+    &.bold, &.italic {
       color: @light-gray;
+    }
+
+    &.bold {
       font-weight: bold;
     }
 
     &.italic {
-      color: @light-gray;
       font-style: italic;
     }
   }
@@ -187,35 +172,18 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .support {
-  &.class {
-    color: @very-light-gray;
-  }
-
-  &.function  {
-    color: @very-light-gray;
-  }
+  color: @very-light-gray;
 }
 
 .entity {
-  &.name.function {
-    color: @very-light-gray;
-  }
-
-  &.name.class, &.name.type.class {
-    color: @very-light-gray;
-  }
+  color: @very-light-gray;
 
   &.name.section {
     color: @blue;
   }
 
   &.name.tag {
-    color: @very-light-gray;
     text-decoration: underline;
-  }
-
-  &.other.attribute-name {
-    color: @very-light-gray;
   }
 }
 
@@ -238,7 +206,6 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.separator {
     background-color: @gray;
-    color: @syntax-text-color;
   }
 }
 
